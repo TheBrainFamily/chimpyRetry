@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.10.0
+    steps:
+      - checkout
+      - run:
+          name: install browsers
+          command:  sh ./installBrowsers.sh
+      - run:
+          name: npm install
+          command: npm install
+      - run:
+          name: run tests
+          command: npm test

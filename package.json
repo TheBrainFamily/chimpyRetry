@@ -1,0 +1,19 @@
+{
+  "name": "chimpyretry",
+  "version": "1.0.0",
+  "description": "An example of how to use chimpy retry functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "bash ./runTests.sh"
+  },
+  "keywords": [
+    "chimpy",
+    "retry"
+  ],
+  "author": "Łukasz Gandecki <lgandecki@thebrain.pro>",
+  "license": "ISC",
+  "devDependencies": {
+    "chimpy": "^0.52.0",
+    "cucumber-junit": "^1.7.1"
+  }
+}
