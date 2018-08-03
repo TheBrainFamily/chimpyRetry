@@ -14,6 +14,6 @@ if [ $E2E_TESTS_RESULT -ne 0 ]; then
     E2E_TESTS_RESULT=$?
 fi
 
-# cat $CUCUMBER_JSON_OUTPUT | ./node_modules/.bin/cucumber-junit > $CIRCLE_TEST_REPORTS/e2e-tests.xml
+cat $CUCUMBER_JSON_OUTPUT | ./node_modules/.bin/cucumber-junit > ./test-results/cucumber/e2e-tests.xml
 
 exit $E2E_TESTS_RESULT
