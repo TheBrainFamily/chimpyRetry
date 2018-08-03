@@ -4,7 +4,7 @@ CUCUMBER_JSON_OUTPUT=./test-results/chimp/results.json
 
 TESTS_TO_RUN=`circleci tests glob features/*.feature | circleci tests split`
 
-./node_modules/.bin/chimpy TESTS_TO_RUN --jsonOutput=$CUCUMBER_JSON_OUTPUT
+./node_modules/.bin/chimpy $TESTS_TO_RUN --jsonOutput=$CUCUMBER_JSON_OUTPUT
 
 E2E_TESTS_RESULT=$?
 
