@@ -13,6 +13,7 @@ if [ $E2E_TESTS_RESULT -ne 0 ]; then
     ./node_modules/.bin/chimpy $FAILED_TESTS
     E2E_TESTS_RESULT=$?
 fi
+mkdir -p ./test-results/cucumber/
 
 cat $CUCUMBER_JSON_OUTPUT | ./node_modules/.bin/cucumber-junit > ./test-results/cucumber/e2e-tests.xml
 
