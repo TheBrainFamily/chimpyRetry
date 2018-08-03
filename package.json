@@ -13,7 +13,7 @@
   "author": "Łukasz Gandecki <lgandecki@thebrain.pro>",
   "license": "ISC",
   "devDependencies": {
-    "chimpy": "^0.52.0",
+    "chimpy": "^0.54.0",
     "cucumber-junit": "^1.7.1"
   }
 }
