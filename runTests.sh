@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export DISPLAY=:99.0
-
 CUCUMBER_JSON_OUTPUT=./test-results/chimp/results.json
 
 ./node_modules/.bin/chimpy features --jsonOutput=$CUCUMBER_JSON_OUTPUT
