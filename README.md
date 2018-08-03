@@ -1,9 +1,9 @@
 # Chimpy CircleCI example
-This is an example of how to set up Chimpy on CircleCI with parallelisation and retrying flaky tests.
+This is an example of how to set up Chimpy on CircleCI with parallelisation, retrying flaky tests, and reporting.
 
 There is very few files here so they should be self explanatory, but do please to ask questions and create issues.
 
-You can take at a result of a example run [https://circleci.com/gh/TheBrainFamily/chimpyRetry/19](here).
+You can take at a result of a example run [here](https://circleci.com/gh/TheBrainFamily/chimpyRetry/19).
 
 # Disclaimer:
 
