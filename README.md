@@ -3,6 +3,8 @@ This is an example of how to set up Chimpy on CircleCI with parallelisation and 
 
 There is very few files here so they should be self explanatory, but do please to ask questions and create issues.
 
+You can take at a result of a example run [https://circleci.com/gh/TheBrainFamily/chimpyRetry/19](here).
+
 # Disclaimer:
 
 We don't want to encourage writing flaky tests, using arbitrary .pauses(), things like that.
