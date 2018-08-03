@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:6.11.3-browsers
+    parallelism: 2
     steps:
       - checkout
       - run:
