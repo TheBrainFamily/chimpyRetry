@@ -15,11 +15,19 @@ jobs:
             wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
             sudo dpkg -i ./google-chrome*.deb
             sudo apt-get install -f
+      - restore_cache:
+          key: npm-deps-{{ checksum "package-lock.json" }}
       - run:
           name: Install Package Dependencies
           command: npm install
       - run:
           name: Run The Tests!
           command: npm test
+      - save_cache:
+          key: npm-deps-{{ checksum "package-lock.json" }}
+          paths:
+            - "node_modules"
       - store_test_results:
+          path: test-results
+      - store_artifacts:
           path: test-results
