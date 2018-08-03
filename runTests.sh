@@ -8,7 +8,7 @@ else
     export CUCUMBER_JSON_OUTPUT=./results.json
 fi
 
-./node_modules/.bin/chimpy features --jsonOutput=$CUCUMBER_JSON_OUTPUT --debug
+./node_modules/.bin/chimpy features --jsonOutput=$CUCUMBER_JSON_OUTPUT
 
 E2E_TESTS_RESULT=$?
 

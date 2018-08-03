@@ -6,17 +6,17 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install dependencies
+          name: Install System Dependencies
           command: sudo apt-get install libxss1 libappindicator3-1 libindicator7
       - run:
-          name: Chrome install
+          name: Install Chrome
           command: |
             wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
             sudo dpkg -i ./google-chrome*.deb
             sudo apt-get install -f
       - run:
-          name: npm install
+          name: Install Package Dependencies
           command: npm install
       - run:
-          name: run tests
+          name: Run The Tests!
           command: npm test
